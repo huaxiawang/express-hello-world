@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha test -u bdd -R spec"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/huaxiawang/express-hello-world.git"
@@ -12,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/huaxiawang/express-hello-world/issues"
   },
-  "homepage": "https://github.com/huaxiawang/express-hello-world#readme"
+  "homepage": "https://github.com/huaxiawang/express-hello-world#readme",
+  "devDependencies": {
+    "mocha": "^6.1.4",
+    "should": "^13.2.3"
+  },
+  "dependencies": {
+    "webpack": "^4.34.0"
+  }
 }
