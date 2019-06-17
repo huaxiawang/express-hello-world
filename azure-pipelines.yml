@@ -21,7 +21,8 @@ steps:
     npm run build
   displayName: 'npm install and test and build'
 
-- task: ArchiveFiles@2
+- task: Npm@1
   inputs:
-    rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
-    includeRootFolder: false
+     command: publish
+     publishRegistry: useFeed
+     publishFeed: https://pkgs.dev.azure.com/hwang0346/_packaging/hwang0346/npm/registry/
